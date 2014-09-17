@@ -4,7 +4,6 @@ $(document).ready(function() {
 
   // window.onKeyDown = function(e) {
   $('body').keydown(function(e){
-    console.log('key code');
 
     if (e.keyCode == 37){
       heroShip.moveLeft();
@@ -21,10 +20,10 @@ $(document).ready(function() {
   });
   $('body').append(heroShip.$node);
 
-  setTimeout(function(){
-    var enemyShip = new Enemy($(document).width() * Math.random(), $(document).height() * Math.random());
-    $('enemy').append(enemyShip.$node);
-  },5000);
+  setInterval(function(){
+    var enemyShip = new Enemy($(window).width() * Math.random(), $(window).height() * Math.random());
+    $('body').append(enemyShip.$node);
+  },2000);
 
 });
 

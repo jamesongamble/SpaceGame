@@ -3,10 +3,11 @@ body{
   background-image: url('assets/purpleSpace.jpg');
   background-size:100%;
   background-repeat:no-repeat;
+  overflow:none;
 }
 
 .protagonist {
-  background: url('assets/spaceShip.png');
+  background: url('assets/spaceShip2.png');
   top:60%;
   left:40%;
   height:576px;
@@ -22,7 +23,7 @@ body{
   left:40%;
   height:350px;
   width:380px;
-  /*-webkit-transform:rotate(180deg) scale(0.05,0.05);*/
+  -webkit-transform:scale(0.25,0.25);
   border-radius:10px;
   position:absolute;
 
